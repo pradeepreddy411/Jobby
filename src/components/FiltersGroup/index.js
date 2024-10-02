@@ -78,12 +78,12 @@ const FiltersGroup = props => {
     )
   }
   const renderSalaryRange = () => {
-    const {salaryRangeList} = props
+    const {salaryRangesList} = props
     return (
       <div className="salary-range-container">
         <h1 className="salary-range-heading">Salary Range</h1>
         <ul className="salary-range-list-container">
-          {salaryRangeList.map(eachSalary => {
+          {salaryRangesList.map(eachSalary => {
             const {changeSalary} = props
             const onClickSalary = () => {
               changeSalary(eachSalary.salaryRangeId)
